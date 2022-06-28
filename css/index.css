@@ -1,0 +1,13 @@
+body{
+    min-width: 300px;
+}
+
+
+#input_id{ 
+    width : 100% ;
+}
+
+img{
+    align-content: flex-end;
+    width: 10px;
+}
