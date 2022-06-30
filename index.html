@@ -9,19 +9,26 @@
     <title>Url Saver</title>
 </head>
 <body>
-    <label for="input_id">url</label>
-    <input type="text" id="input_id">
-
-    <button type="submit" id="save_url_id">SAVE URL</button>
-    <button type="submit" id="save_tab_id">SAVE TAB</button>
-    <button type="submit" id="del_id">DELETE</button>
-    <button type="button" class="btn btn-primary">SAVE URL</button>
-
-
-    <div id="url_display_id">
-
+    <div class="container-fluid mb-3">
+        <label for="input_id" class="form-label">url:</label>
+        <input type="text" class="form-control" id="input_id">
     </div>
 
+    <div class="container-fluid mb-3">
+        <button type="button" class="btn btn-primary" id="save_url_id">SAVE URL</button>
+        <button type="button" class="btn btn-success" id="save_tab_id">SAVE TAB</button>
+        <button type="button" class="btn btn-danger" id="del_id">DELETE ALL</button>
+    </div>
+
+    <!--    Where the list of saved urls will be displayed-->
+     <div class="container-fluid">
+        <ul class="list-group" id="url_display_id">
+
+        </ul>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
